@@ -153,7 +153,7 @@ bool Turtlebot3MotorDriver::writeVelocity(int64_t left_value, int64_t right_valu
   bool dxl_addparam_result;
   int8_t dxl_comm_result;
 
-  int64_t value[2] = {left_value, right_value};
+  int64_t value[2] = {left_value, -right_value};
   uint8_t data_byte[4] = {0, };
 
   for (uint8_t index = 0; index < 2; index++)
